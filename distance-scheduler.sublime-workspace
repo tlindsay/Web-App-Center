@@ -1,0 +1,895 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"date",
+				"datecomplete"
+			],
+			[
+				"permi",
+				"permissions"
+			],
+			[
+				"class",
+				"class_section"
+			],
+			[
+				"id",
+				"id_distance_class"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"bootstrap-",
+				"bootstrap-datepicker-js"
+			],
+			[
+				"ty",
+				"type=  (attribute)"
+			],
+			[
+				"jquery",
+				"jquery	<script> (jQuery google ajax api)"
+			],
+			[
+				"tab",
+				"tab_box"
+			],
+			[
+				"paddin",
+				"padding-left:   (property)"
+			],
+			[
+				"h",
+				"h3"
+			],
+			[
+				"stye",
+				"style=  (attribute)"
+			],
+			[
+				"t",
+				"tbody"
+			],
+			[
+				"u",
+				"ul	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/views/tracker/index.blade.php",
+			"settings":
+			{
+				"buffer_size": 3724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/tracker.php",
+			"settings":
+			{
+				"buffer_size": 857,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pro",
+				"Project: Save As"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"zen",
+				"Set Syntax: ZenCoding"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"jav",
+				"Set Syntax: Java"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"blade",
+				"Set Syntax: Sublime Text Syntax Definition"
+			],
+			[
+				"fe",
+				"Snippet: <?php foreach (…) … <?php endforeach ?>"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Comment"
+			],
+			[
+				"",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Create Binary Package File"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/distance-scheduler/storage/views/d5730bdb18140a1827b0fdb47e8ddf73",
+		"/Applications/MAMP/htdocs/distance-scheduler/public/js/custom.js",
+		"/Applications/MAMP/htdocs/distance-scheduler/distance-scheduler.sublime-project",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/job_search/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/job_search.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/admin/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/tracker/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/tracker.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/admin.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/job.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/User.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/registration.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/permission.php",
+		"/Users/tmhenson/Desktop/admin.php",
+		"/Users/tmhenson/Desktop/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/home/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/user.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/registration/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/laravel/database/connectors/postgres.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/layouts/main.blade.php",
+		"/Applications/MAMP/htdocs/instapics/application/controllers/dashboard.php",
+		"/Applications/MAMP/htdocs/instapics/application/controllers/home.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/class/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/class.php",
+		"/Applications/MAMP/htdocs/instapics/application/controllers/user.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/dashboard.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/dashboard/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/storage/views/a947dc67b389ea7126d351f677958325",
+		"/Applications/MAMP/htdocs/distance-scheduler/laravel/documentation/views/home.md",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/index.html",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/config/application.php",
+		"/Users/tmhenson/Desktop/cascade_users.txt",
+		"/Users/tmhenson/Desktop/Form-Emails-Cascade-Server/Form Builder.vm.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/bundles.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/home.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/public/css/style.css",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/routes.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/start.php",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/presswork/style.css",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/whiteboard/single.php",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/BlackPower/includes/theme-options/fn-admin.php",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/BlackPower/includes/theme-options/obwp-settings.php",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/BlackPower/functions.php",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/whiteboard/screenshot.png",
+		"/Applications/MAMP/htdocs/WordPress/wp-content/themes/presswork/admin/actions.php",
+		"/Users/tmhenson/Desktop/.htaccess",
+		"/Users/tmhenson/Desktop/cascade-files/raul-standard-template.html",
+		"/Users/tmhenson/Desktop/Transfer/error.log",
+		"/Users/tmhenson/Desktop/Transfer/unatest.conf",
+		"/Users/tmhenson/Desktop/Transfer/error_log-20120919",
+		"/Users/tmhenson/Desktop/Transfer/ssl_error_log-20120919",
+		"/Users/tmhenson/Desktop/Transfer/paths.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/controllers/base.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/student.php",
+		"/Users/tmhenson/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/Users/tmhenson/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/tmhenson/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/class.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/registration.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/Registration/index.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/distance_class.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/photocomment.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/requestor.php",
+		"/Applications/MAMP/htdocs/instapics/application/views/layouts/main.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/public/js/bootstrap-datepicker.js",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/views/plugins/upload_modal.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/views/dashboard/index.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/controllers/dashboard.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/application/models/photo.php",
+		"/Applications/MAMP/htdocs/instapics/application/views/plugins/loggedin_postnav.blade.php",
+		"/Applications/MAMP/htdocs/distance-scheduler/public/css/bootstrap.css",
+		"/Applications/MAMP/htdocs/distance-scheduler/public/css/style1.css",
+		"/Applications/MAMP/htdocs/job_system/application/views/plugins/edit_job.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/controllers/job.php",
+		"/Users/tmhenson/dumps/Distance20120907.sql",
+		"/Applications/MAMP/htdocs/job_system/application/views/plugins/upload_modal.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/job.php",
+		"/Applications/MAMP/htdocs/job_system/application/controllers/job_project.php",
+		"/Applications/MAMP/htdocs/job_system/application/controllers/photo.php",
+		"/Applications/MAMP/htdocs/job_system/application/views/layouts/main.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/views/plugins/loggedin_postnav.blade.php",
+		"/Applications/MAMP/htdocs/job_system/public/css/bootstrap.css",
+		"/Applications/MAMP/htdocs/job_system/public/css/bootstrap-responsive.css",
+		"/Applications/MAMP/htdocs/job_system/application/models/User.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/job_project.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/job_class.php",
+		"/Applications/MAMP/htdocs/job_system/application/views/home/index.blade.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/requestor.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/view.php",
+		"/Applications/MAMP/htdocs/job_system/application/controllers/user.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/relationship.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/database/eloquent/relationships/relationship.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/userprofile.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/job_type.php",
+		"/Applications/MAMP/htdocs/job_system/application/models/photo.php",
+		"/Applications/MAMP/htdocs/instapics/application/config/database.php",
+		"/Applications/MAMP/htdocs/instapics/application/models/User.php",
+		"/Applications/MAMP/htdocs/instapics/application/models/relationship.php",
+		"/Applications/MAMP/htdocs/instapics/application/routes.php",
+		"/Applications/MAMP/htdocs/instapics/paths.php",
+		"/Applications/MAMP/htdocs/instapics/application/views/home/about.blade.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/routes.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/controllers/base.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/controllers/home.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/views/home/about.blade.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/views/layout/main.blade.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/laravel/view.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/views/home/index.blade.php",
+		"/Applications/MAMP/htdocs/job_system/laravel/public/css/style.css",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/controllers/login.php",
+		"/Applications/MAMP/conf/apache/original/extra/httpd-vhosts.conf",
+		"/Applications/MAMP/conf/apache/extra/httpd-vhosts.conf",
+		"/Users/tmhenson/Desktop/jquery-1.8.0.min.js",
+		"/Users/tmhenson/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/tmhenson/Desktop/Blade.tmLanguage",
+		"/Applications/MAMP/htdocs/job_system/laravel/application/tasks/generate.php",
+		"/Users/tmhenson/Desktop/test.html",
+		"/Users/tmhenson/Downloads/download/bffiles/index.html",
+		"/Users/tmhenson/Downloads/download/bffiles/style.css",
+		"/Users/tmhenson/Downloads/download/bffiles/screenshot.png",
+		"/Users/tmhenson/Downloads/download/bffiles/reset.css",
+		"/Users/tmhenson/Downloads/download/bffiles/ie.css",
+		"/Users/tmhenson/Desktop/Transfer/480syllabus.htm",
+		"/Users/tmhenson/Desktop/Transfer/prod/business_una_edu.conf",
+		"/Users/tmhenson/Desktop/Transfer/prod/una_edu.conf",
+		"/Users/tmhenson/Desktop/Transfer/prod/undergraduate.php",
+		"/Users/tmhenson/Desktop/buildings.xml",
+		"/Users/tmhenson/Desktop/password/.htpasswd"
+	],
+	"find":
+	{
+		"height": 47.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"assigned",
+			"progress",
+			"process",
+			"assigned",
+			"due",
+			"progress",
+			"jobs",
+			"/b>",
+			"({{",
+			"myTab",
+			"mytab",
+			"myTab",
+			"users",
+			"classes",
+			"students",
+			"permissions",
+			"$message",
+			"message",
+			"<li>",
+			".",
+			"states",
+			"permissions",
+			"}\n",
+			"permissions",
+			"/></",
+			"permission",
+			"bt",
+			"user",
+			"value",
+			"passwo",
+			"btn-block",
+			"Yes",
+			"class",
+			"\"></",
+			"button",
+			"slots",
+			"help",
+			"The",
+			"the",
+			"we",
+			"We",
+			"your",
+			"used",
+			"sharpen",
+			"background",
+			"075B01",
+			"add_action('admin_menu'",
+			"help",
+			"pw_single_save",
+			"pw_actionCall",
+			"pw_body_top",
+			"login",
+			"rewrite",
+			"override",
+			"post",
+			"distance_class",
+			"right",
+			"</address>",
+			"&#160;",
+			"<address>",
+			"submit",
+			"date",
+			"photo",
+			"upload",
+			"well",
+			"location",
+			"job",
+			"jobs",
+			"GEO",
+			"career",
+			"socialmedia",
+			"unatest",
+			"<td width=\"55%\">",
+			"<td colspan=\"3\">",
+			"</td>",
+			"</tr>",
+			"<tr>",
+			"<td>",
+			"<td colspan=\"1\">",
+			"<td colspan=\"3\">",
+			"</tr>",
+			"<td colspan=\"1\">",
+			"<tr>",
+			"</td>",
+			"<td colspan=\"2\" width=\"150\">",
+			"</tr>",
+			"<td colspan=\"2\">",
+			"<td colspan=\"2\" style=\"vertical-align:top;\">",
+			"<tr>",
+			"<td>",
+			"<td colspan=\"2\" width=\"150\">",
+			"<td colspan=\"4\" style=\"font-size:7pt;font-style:italic;\">",
+			"</td>",
+			"</tr>",
+			"<tr>",
+			"<td colspan=\"2\">",
+			"</tr>",
+			"<tr>",
+			"</td>",
+			"<td>",
+			"<td style=\"padding-left:10px;\">",
+			"</td>",
+			"<t/d>",
+			"<td>",
+			"<tr>",
+			"</tr>",
+			"<tr>",
+			"</td>",
+			"<td>",
+			"<td colspan=\"2\">",
+			"<td colspan=\"4\">",
+			"<td colspan=\"1\" class=\"tdtop\">",
+			"<td colspan=\"1\" valign=\"top\">",
+			"<tr >",
+			"<td colspan=\"1\">",
+			"<td colspan=\"3\">",
+			"<tr>",
+			"</tr>",
+			"</td>",
+			"<td>",
+			"../",
+			"value\"",
+			"class=\"tab_content\"",
+			"class=\"tab_container\"",
+			"<table",
+			"<tr>",
+			"<td>",
+			"src=\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"brass-studio/images/studio",
+			"docs/hand/Cha",
+			"docs/handbook/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/views/tracker/index.blade.php",
+					"settings":
+					{
+						"buffer_size": 3724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2939,
+								2939
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Laravel-Blade/Blade.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 804.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/tracker.php",
+					"settings":
+					{
+						"buffer_size": 857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								844,
+								844
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"controltra",
+				"application/controllers/tracker.php"
+			],
+			[
+				"adminbla",
+				"application/views/admin/index.blade.php"
+			],
+			[
+				"",
+				"application/views/tracker/index.blader.php"
+			],
+			[
+				"modelus",
+				"application/models/User.php"
+			],
+			[
+				"modelpe",
+				"application/models/permission.php"
+			],
+			[
+				"adminbl",
+				"application/views/admin/index.blade.php"
+			],
+			[
+				"admin",
+				"application/controllers/admin.php"
+			],
+			[
+				"controlus",
+				"application/controllers/user.php"
+			],
+			[
+				"user",
+				"application/controllers/user.php"
+			],
+			[
+				"post",
+				"laravel/database/connectors/postgres.php"
+			],
+			[
+				"viewlay",
+				"application/views/layouts/main.blade.php"
+			],
+			[
+				"contruser",
+				"application/controllers/user.php"
+			],
+			[
+				"modelu",
+				"application/models/User.php"
+			],
+			[
+				"models",
+				"application/models/permission.php"
+			],
+			[
+				"viewcl",
+				"application/views/class/index.blade.php"
+			],
+			[
+				"controllerus",
+				"application/controllers/user.php"
+			],
+			[
+				"controllercl",
+				"application/controllers/class.php"
+			],
+			[
+				"viewsadmi",
+				"application/views/admin/index.blade.php"
+			],
+			[
+				"controllera",
+				"application/controllers/admin.php"
+			],
+			[
+				"controllerdas",
+				"application/controllers/dashboard.php"
+			],
+			[
+				"controlleruse",
+				"application/controllers/user.php"
+			],
+			[
+				"viewhome",
+				"application/views/home/index.blade.php"
+			],
+			[
+				"viewdas",
+				"application/views/dashboard/index.blade.php"
+			],
+			[
+				"viewadmin",
+				"application/views/admin/index.blade.php"
+			],
+			[
+				"viewad",
+				"storage/views/a947dc67b389ea7126d351f677958325"
+			],
+			[
+				"controller",
+				"application/controllers/dashboard.php"
+			],
+			[
+				"controllerda",
+				"application/controllers/dashboard.php"
+			],
+			[
+				"viewdash",
+				"application/views/dashboard/index.blade.php"
+			],
+			[
+				"viewhom",
+				"laravel/documentation/views/home.md"
+			],
+			[
+				"viewre",
+				"application/views/registration/index.blade.php"
+			],
+			[
+				"reg",
+				"application/controllers/registration.php"
+			],
+			[
+				"classbl",
+				"application/views/class/index.blade.php"
+			],
+			[
+				"models/",
+				"application/models/permission.php"
+			],
+			[
+				"blade",
+				"application/views/dashboard/index.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true
+}

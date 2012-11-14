@@ -1,0 +1,27 @@
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+/*#help-widget {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: #F4F4F4;
+    border-bottom-right-radius: 3px;
+    border-color: #BEBEBE #BEBEBE #BEBEBE -moz-use-text-color;
+    border-image: none;
+    border-style: solid solid solid none;
+    border-top-right-radius: 3px;
+    border-width: 1px 1px 1px medium;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: block !important;
+    font: 13px/17px Helvetica,Arial,sans-serif;
+    height: 39px;
+    left: 0;
+    position: fixed;
+    top: 185px;
+    width: 24px;
+    z-index: 890;
+}*/

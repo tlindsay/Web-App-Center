@@ -1,0 +1,10 @@
+{
+	"url": "http:localhost:8888/",
+	
+	"folders":
+	[
+		{
+			"path": "/Applications/MAMP/htdocs/distance-scheduler"
+		}
+	]
+}

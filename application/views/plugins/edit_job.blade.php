@@ -1,0 +1,28 @@
+<div class="modal hide" id="edit_job">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+		<h3>Edit Project</h3>
+	</div>
+	<div class="modal-body">
+		<form method="POST" action="{{ URL::to('job/upload') }}" id="upload_modal_form" enctype="multipart/form-data">
+			<label for="dueDate">Due Date</label>
+			<input type="text" name="dueDate" id="dueDate"/>
+			<label for="CompleteDate">Printer/Complete</label>
+			<input type="text" name="CompleteDate" id="CompleteDate"/>
+			<label for="requestedDate">Date Requested</label>
+			<input type="text" name="requestedDate" id="requestedDate"/>
+			<label for="requestor">Contact Name</label>
+			<input type="text" name="requestor" id="requestor"/>
+			<label for="phone">Phone Number</label>
+			<input type="text" name="phone" id="phone"/>
+			<label for="email">Email</label>
+			<input type="text" name="email" id="email"/>
+			<label for="description">Job Notes</label>
+			<textarea placeholder="Describe your job request in a few sentences" name="description" id="description" class="span5"></textarea>
+	    </form>
+	</div>
+	<div class="modal-footer">
+		<a href="#" class="btn" data-dismiss="modal">Cancel</a>
+    	<button type="button" onclick="$('#upload_modal_form').submit();" class="btn btn-primary">Add Job</a>
+	</div>
+</div>
