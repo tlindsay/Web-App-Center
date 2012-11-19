@@ -128,3 +128,15 @@ CREATE TABLE `access` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1$$
 
+delimiter $$
+
+CREATE TABLE `permissions` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(45) default NULL,
+  `create_at` datetime default NULL,
+  `update_at` datetime default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1$$
+
+
+
