@@ -16,7 +16,7 @@
     <br style="clear:both"/>
     <div class="well" style="text-align: left">
         <h3>Add Time Slot</h3>
-        <form method="POST" action="{{ URL::to('dashboard/insert') }}" id="upload_modal_form" enctype="multipart/form-data">
+        <form method="POST" action="dashboard/insert" id="insert_section" enctype="multipart/form-data">
             <label>Date</label>
             <input type="text" name="date" id="date" class="datepicker"/>
             <label>Time</label>
@@ -28,7 +28,7 @@
             <br/>
         </form>
         <div>
-            <button type="button" onclick="$(upload_modal_form).submit();" class="btn btn-primary">Save</button>
+            <button type="button" onclick="$(insert_section).submit();" class="btn btn-primary">Save</button>
         </div>
     </div>
     <div class="alert alert-info">

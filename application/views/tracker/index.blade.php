@@ -81,17 +81,21 @@
         <h3 class="alert-heading">Job List</h3>
         <table class="table">
             <tr>
+                <th>----</th>
                 <th>Due Date</th>
                 <th>Job Name</th>
                 <th>Project Type</th>
+                <th>Project Status</th>
                 <th>Date Request</th>
                 <th>Assigned to</th>
             </tr>
         @foreach ($jobs as $jobs)
             <tr>
+                <td><i class="icon-pencil" onclick="$('#edit_job').modal({backdrop: 'static'});"></i></td>
                 <td>{{ $jobs->datedue }}</td>
                 <td>{{ $jobs->projname }}</td>
                 <td>{{ $jobs->projtype }}</td>
+                <td>{{ $jobs->projstatus }}</td>   
                 <td>{{ $jobs->reqdate }}</td>
                 <td>{{ $jobs->projuserid }}</td>
             </tr> 

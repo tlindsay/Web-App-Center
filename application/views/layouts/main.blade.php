@@ -35,5 +35,11 @@
             <footer>
                 <p>&copy; UNA Web App Center 2012</p>
             </footer>
-        </div> <!-- /container -->    </body>
+        </div> <!-- /container -->    
+
+      @section('form_edit')
+        @if (Auth::check())
+            @include('plugins.edit_job')
+        @endif
+        @yield_section</body>
 </html>

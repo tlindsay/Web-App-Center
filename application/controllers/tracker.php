@@ -17,6 +17,10 @@ class Tracker_Controller extends Base_Controller {
         //proof out
         $proof = job::where('projstatus', '=', 'proofout')->get();
 
+        //proof out
+        //$status = job::where('projstatus', '=', 'status')->get();
+
+
         //finished
         // $finished = job::count();
         
@@ -28,8 +32,15 @@ class Tracker_Controller extends Base_Controller {
        											'assigned' => $assigned,
        											'progress' => $progress,
        											'proof' => $proof
+                            //'status' => $status
        	));
 
+    }
+//update the jobs here
+    public function action_update()
+    {
+    //return to action index page
+      action_index();
     }
 
 }
