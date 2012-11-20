@@ -31,7 +31,7 @@ class User_Controller extends Base_Controller
             try {
                 $user = new User();
                 $user->email = $email;
-                $user->password = $password;
+                $user->password = Hash::make($password);
                 $user->save();
                 Auth::login($user);
             
