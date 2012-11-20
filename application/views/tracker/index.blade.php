@@ -89,14 +89,14 @@
                 <th>Date Request</th>
                 <th>Assigned to</th>
             </tr>
-        @foreach ($jobs as $jobs)
+            @foreach ($jobs as $jobs)
             <tr>
                 <td><i class="icon-pencil" onclick="$('#edit_job').modal({backdrop: 'static'});"></i></td>
                 <td>{{ $jobs->datedue }}</td>
                 <td>{{ $jobs->projname }}</td>
                 <td>{{ $jobs->projtype }}</td>
                 <td>{{ $jobs->projstatus }}</td>   
-                <td>{{ $jobs->reqdate }}</td>
+                <td>{{ $jobs->daterequested }}</td>
                 <td>{{ $jobs->projuserid }}</td>
             </tr> 
         @endforeach
@@ -105,3 +105,8 @@
     </div>
 </div>
 @endsection
+@section('form_edit')
+        @if (Auth::check())
+            @include('plugins.edit_job')
+        @endif
+        @yield_section

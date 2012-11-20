@@ -37,9 +37,5 @@
             </footer>
         </div> <!-- /container -->    
 
-      @section('form_edit')
-        @if (Auth::check())
-            @include('plugins.edit_job')
-        @endif
-        @yield_section</body>
+     </body>
 </html>
