@@ -218,9 +218,11 @@ abstract class Model {
 	{
 		$model = new static(array(), true);
 
-		if (static::$timestamps) $attributes['updated_at'] = new \DateTime;
+		$model->fill($attributes);
 
-		return $model->query()->where($model->key(), '=', $id)->update($attributes);
+		if (static::$timestamps) $model->timestamp();
+
+		return $model->query()->where($model->key(), '=', $id)->update($model->attributes);
 	}
 
 	/**
@@ -230,11 +232,9 @@ abstract class Model {
 	 * @param  array   $columns
 	 * @return Model
 	 */
-	public static function find($id, $columns = array('*'))
+	public function _find($id, $columns = array('*'))
 	{
-		$model = new static;
-
-		return $model->query()->where(static::$key, '=', $id)->first($columns);
+		return $this->query()->where(static::$key, '=', $id)->first($columns);
 	}
 
 	/**
@@ -399,7 +399,7 @@ abstract class Model {
 		// then we can consider the insert successful.
 		else
 		{
-			$id = $this->query()->insert_get_id($this->attributes, $this->sequence());
+			$id = $this->query()->insert_get_id($this->attributes, $this->key());
 
 			$this->set_key($id);
 
@@ -445,7 +445,7 @@ abstract class Model {
 	 *
 	 * @return void
 	 */
-	protected function timestamp()
+	public function timestamp()
 	{
 		$this->updated_at = new \DateTime;
 
@@ -482,7 +482,7 @@ abstract class Model {
 	 */
 	public function changed($attribute)
 	{
-		return array_get($this->attributes, $attribute) !== array_get($this->original, $attribute);
+		return array_get($this->attributes, $attribute) != array_get($this->original, $attribute);
 	}
 
 	/**
@@ -617,6 +617,8 @@ abstract class Model {
 			// to_array method, keying them both by name and ID.
 			elseif (is_array($models))
 			{
+				$attributes[$name] = array();
+
 				foreach ($models as $id => $model)
 				{
 					$attributes[$name][$id] = $model->to_array();
@@ -746,10 +748,12 @@ abstract class Model {
 			return static::$$method;
 		}
 
+		$underscored = array('with', 'find');
+
 		// Some methods need to be accessed both staticly and non-staticly so we'll
 		// keep underscored methods of those methods and intercept calls to them
 		// here so they can be called either way on the model instance.
-		if (in_array($method, array('with')))
+		if (in_array($method, $underscored))
 		{
 			return call_user_func_array(array($this, '_'.$method), $parameters);
 		}

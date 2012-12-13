@@ -16,7 +16,7 @@
                         <ul class="nav">
                             @section('navigation')
                             <!-- <li class="active"><a href="home">Home</a></li> -->
-                            <li class="active"><a href="dashboard">Schedule</a><li>
+                            <li><a href="dashboard">Schedule</a><li>
                             <li><a href="registration">Registration</a><li>
                             <li><a href="class">Manage Classes</a><li>
                             @yield_section

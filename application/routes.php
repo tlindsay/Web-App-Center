@@ -1,11 +1,11 @@
 <?php
 
-
-/*Route::get('/', function()
-{
-	return View::make('home.index');
-});*/
 Route::controller(Controller::detect());
+//Route::get('/', function()
+//{
+//	return View::make('home.index');
+//});
+
 
 Event::listen('404', function()
 {
@@ -17,6 +17,33 @@ Event::listen('500', function()
 	return Response::error('500');
 });
 
+/*
+|--------------------------------------------------------------------------
+| Route Filters
+|--------------------------------------------------------------------------
+|
+| Filters provide a convenient method for attaching functionality to your
+| routes. The built-in before and after filters are called before and
+| after every request to your application, and you may even create
+| other filters that can be attached to individual routes.
+|
+| Let's walk through an example...
+|
+| First, define a filter:
+|
+|		Route::filter('filter', function()
+|		{
+|			return 'Filtered!';
+|		});
+|
+| Next, attach the filter to a route:
+|
+|		Router::register('GET /', array('before' => 'filter', function()
+|		{
+|			return 'Hello World!';
+|		}));
+|
+*/
 
 Route::filter('before', function()
 {
@@ -35,10 +62,5 @@ Route::filter('csrf', function()
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::to('home');
-});
-
-Route::filter('nonauth', function()
-{
-	if (Auth::guest() == false) return Redirect::to('dashboard');
+	if (Auth::guest()) return Redirect::to('login');
 });

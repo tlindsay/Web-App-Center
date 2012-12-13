@@ -6,6 +6,9 @@ class Admin_Controller extends Base_Controller
 
         $users = user::all();
         $permissions = permission::all();
+        // foreach ($users as $users){
+        //     select 'name' from 'permissions' where 'id' = $users;
+        // }
 
      // dd($permissions);
      return View::make('admin.index', array('permissions' => $permissions, 'users' => $users));
@@ -15,6 +18,7 @@ class Admin_Controller extends Base_Controller
     //add new users here 
     public function action_add()
     {
+        $permissionid = Input::get('site');
         $email = Input::get('email');
         $password = Input::get('password');
         $active = Input::get('active');
@@ -22,7 +26,7 @@ class Admin_Controller extends Base_Controller
         $input = array(
             'email' => $email,
             'password' => $password,
-            'acitve' => $active
+            'active' => $active
         );
 
         $rules = array(
@@ -40,6 +44,7 @@ class Admin_Controller extends Base_Controller
             $user = new User();
             $user->email = $email;
             $user->password = Hash::make($password);
+            $user->permission_id = $permissionid;
             $user->active = $active;
             $user->save();
 
@@ -51,14 +56,20 @@ class Admin_Controller extends Base_Controller
             return Redirect::to('admin');
         }
     }
+
+    // public function getPermission($id){
+    //     echo $id;
+    //     $permName = DB::query("select 'name' from 'permissions' where 'id' = $id");
+    //     return $permName;
+    // }
     
     public function action_activate()
     {
         //get the value of that user
-        $status = Input::get('status');
         $id = Input::get('id');
-        // dd($status);
         $user = User::find($id);
+        // dd($status);
+        $status = $user->active;
 
         //if the value is Y then change to N
         if ($status == 'Y'){

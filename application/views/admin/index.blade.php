@@ -56,12 +56,12 @@
             <tr>
                 <td>{{ $users->email }}</td>
                 <td>{{ $users->active }}</td>
-                <td>{{ $users->permission_id }} <input type="hidden" name="id" value="{{ $users->permission_id }}"/></td>
+                <td>{{ $users->permission->name}}  <input type="hidden" name="id" value="{{ $users->id }}"/></td>
                 <td>
                     @if ( $users->active == 'Y')
-                    <button type="submit" class="btn btn-warning">Activate</button>
+                        <button type="submit" class="btn btn-success">De-Activate</button>
                     @else
-                    <button type="submit" class="btn btn-success">De-Activate</button>
+                        <button type="submit" class="btn btn-warning">Activate</button>
                     @endif
                 </td>
             </tr>

@@ -36,6 +36,5 @@
 return array(
 
 	'docs' => array('handles' => 'docs'),
-	'sentry' =>array('location' => 'sentry', 'auto' => true,),
 
 );

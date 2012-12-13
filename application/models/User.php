@@ -5,7 +5,12 @@ class User extends Eloquent
 
     public function permission()
     {
-        return $this->_belongs_to('Permission');
+        return $this->belongs_to('Permission');
     }
+
+    public function getPermission($id){
+		$permission_name = Permission::find($id);
+	    return $permission_name->name;
+	}
 
 }

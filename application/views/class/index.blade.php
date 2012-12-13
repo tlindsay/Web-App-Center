@@ -1,3 +1,4 @@
+<!-- Manage Classes -->
 @layout('layouts/main')
 
 @section('navigation')
@@ -6,6 +7,7 @@
 @endsection
 
 @section('content')
+<div class="active">
 <div class="row">
     <div class="span3">
 

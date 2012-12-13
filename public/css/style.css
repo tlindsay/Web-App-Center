@@ -3,7 +3,7 @@ body {
     padding-bottom: 40px;
 }
 
-/*#help-widget {
+#help-widget {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -24,4 +24,4 @@ body {
     top: 185px;
     width: 24px;
     z-index: 890;
-}*/
+}

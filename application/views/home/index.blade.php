@@ -9,7 +9,7 @@
     <div class="row">
         <div class="span6">
             <h1>Welcome to UNA Web App Center!</h1>
-            <p>The UNA Web App is in-house application used to manage Web Applications for Univeristy of North Alabama.</p>
+            <p>The UNA Web App Center is an in-house application used to manage Web Applications for Univeristy of North Alabama.</p>
             <p><a href="about" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
             
             <form class="well" method="POST" action="user/authenticate">
@@ -24,7 +24,7 @@
         </div>
         
         <div class="span4">
-            <img src="img/phones3.png" alt="Instapics!" />
+            <img src="../img/logo-trans.png" alt="Instapics!" />
         </div>
     </div>
     
