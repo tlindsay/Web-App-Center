@@ -15,15 +15,15 @@
         <h1>Distance - Registration</h1>
     </div>
     <br style="clear:both"/>
-    <div class="well" style="text-align: left">
+   <!--  <div class="well" style="text-align: left">
         <h3>Add Students</h3>
         <form method="POST" action="registration/insert" id="add_student" enctype="multipart/form-data">
-            <!-- <label>Session</label>
-            <input type="text" name="session" id="session"> -->
+            <label>Session</label>
+            <input type="text" name="session" id="session"> 
             <label>Student Name</label>
             <input type="text" name="name" id="name"/>
             <label>L Number</label>
-            <input type="text" name="lNum" id="lNum"/>
+            <input type="text" name="lnum" id="lnum"/>
             <label>Email Address</label>
             <input type="text" name="email" id="email"/>
             <label>Class</label>
@@ -32,18 +32,17 @@
         <div>
             <button type="button" onclick="$(add_student).submit();" class="btn btn-primary">Add Student</button>
         </div>
-    </div>
+    </div> -->
         <div class="alert alert-info">
         <h3 class="alert-heading">Registered Students</h3>
         <table class="table">
-            <tr><th>id</th><th>Time</th><th>Name</th><th>LNum</th><th>Email</th><th>Class</th><th>Delete</th></tr>
+            <tr><th>Session ID</th><th>Name</th><th>L Number</th><th>Email</th><th>Class</th><th>Delete</th></tr>
             @forelse ($students as $students)
             <form method="POST" action="registration/delete" enctype="multipart/form-data">
                 <tr>
-                    <td>{{ $students->id }}</td>
-                    <td>{{ $students->regTime }}</td>
+                    <td>{{ $students->scheduleId }}</td>
                     <td>{{ $students->name }}</td>
-                    <td>{{ $students->lNum }}</td>
+                    <td>{{ $students->lnum }}</td>
                     <td>{{ $students->email }}</td>
                     <td>{{ $students->class }}</td>
                     <td>

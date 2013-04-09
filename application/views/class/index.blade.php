@@ -1,4 +1,3 @@
-<!-- Manage Classes -->
 @layout('layouts/main')
 
 @section('navigation')

@@ -1,4 +1,3 @@
-<!-- Dashboard -->
 @layout('layouts/main')
 
 @section('navigation')

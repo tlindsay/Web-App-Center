@@ -17,9 +17,8 @@
                 <input type="email" placeholder="Your Email Address" name="email" id="email" />
                 <label for="password">Password</label>
                 <input type="password" placeholder="Your Password" name="password" id="password" />
-                <label class="checkbox" for="new_user"><input type="checkbox" name="new_user" id="new_user"> I am a new user</label>
                 <br />
-                <button type="submit" class="btn btn-success">Login or Register</button>
+                <button type="submit" class="btn btn-success">Login</button><span class="help-inline">For a new account, contact your administrator.</span>
             </form>
         </div>
         
@@ -33,7 +32,6 @@
 <!-- Example row of columns -->
 <div class="row">
     <div class="span3">
-        &nbsp;
     </div>
     <div class="span4">
         <a href="#"></a>

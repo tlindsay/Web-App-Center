@@ -14,21 +14,40 @@ class Dashboard_Controller extends Base_Controller {
     public function action_insert() {
         $input = Input::all();
 
+        Validator::register('validTime', function($attribute, $value, $parameters){
+            return preg_match('/([01]?[0-9]|2[0-3]):[0-5][0-9]/', $value);
+        });
+
         //implement rules for validation here.......
         $rules = array(
             'date' => 'required', //description is required
             'number' => 'required', //dueDate is required
-            'title' => 'required' //title is required
+            'title' => 'required', //title is required
+            'time' => 'validTime'
         );
 
-        $validation = Validator::make($input, $rules);
+        $messages = array(
+            'validTime' =>'Sorry, that is not a valid time.',
+        );
+
+        $validation = Validator::make($input, $rules, $messages);
 
         if ($validation->fails()) {
             return Redirect::to('dashboard')->with_errors($validation);
         } else {
             $schedule = Schedule::create(array(
                         'title' => $input['title'],
-                        'dateTimeSlot' => $input['date'],
+                        //need to insert the date and time instead of just mm/dd/yyyy but 2012-11-28 15:45:20
+/*
+                        "INSERT INTO schedule 
+                        (dateTimeSlot, numAllowed, title) 
+                        VALUES(
+                        '" . date("Y-m-d H:i:s", strtotime($_POST['date'] . " " . $_POST['time'] . " " . $_POST['amPm'])) . "',
+                        '" . addslashes($_POST['numAllowed']) . "',
+                        '" . addslashes($_POST['title']) . "'                               
+*/
+                        //just combine date + time + AM or PM
+                        'dateTimeSlot' => $input['date'] + $input['time'],
                         'numAllowed' => $input['number'],
                         'time' => $input['time']
                     ));

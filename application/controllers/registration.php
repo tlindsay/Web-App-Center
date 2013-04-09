@@ -7,38 +7,42 @@ class Registration_Controller extends Base_Controller {
     {
               $students = registration::all();
 
+              foreach($students as $student){
+                
+              }
+
         return View::make('registration.index', array('students' => $students));
     }
 
-     public function action_insert()
-    {
-        $input = Input::all();
+    //  public function action_insert()
+    // {
+    //     $input = Input::all();
         
-        //implement rules for validation here.......
-        $rules = array(
-            'name' => 'required',
-            'lNum' => 'required',
-            'email' => 'required',
-            'class' => 'required',            
-        );
+    //     //implement rules for validation here.......
+    //     $rules = array(
+    //         'name' => 'required',
+    //         'lnum' => 'required',
+    //         'email' => 'required',
+    //         'class' => 'required',            
+    //     );
 
-        $validation = Validator::make($input, $rules);
+    //     $validation = Validator::make($input, $rules);
 
-        if( $validation->fails() ) {
-            return Redirect::to('registration')->with_errors($validation);
-        }else{
-          $registration = Registration::create(array(
-                                'name' => $input['name'],
-                                'lNum' => $input['lNum'],
-                                'email' => $input['email'],
-                                'class' => $input['class'],
+    //     if( $validation->fails() ) {
+    //         return Redirect::to('registration')->with_errors($validation);
+    //     }else{
+    //       $registration = Registration::create(array(
+    //                             'name' => $input['name'],
+    //                             'lNum' => $input['lnum'],
+    //                             'email' => $input['email'],
+    //                             'class' => $input['class'],
                                 
-                                ));
+    //                             ));
 
-        Session::flash('status_success', 'Successfully added new student');
-        return Redirect::to('registration');
-        }
-    }
+    //     Session::flash('status_success', 'Successfully added new student');
+    //     return Redirect::to('registration');
+    //     }
+    // }
 
     public function action_delete()
     {
