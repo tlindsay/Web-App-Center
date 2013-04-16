@@ -14,7 +14,7 @@
             
             <form class="well" method="POST" action="user/authenticate">
                 <label for="email">Email</label>
-                <input type="email" placeholder="Your Email Address" name="email" id="email" />
+                <input type="email" placeholder="Your Email Address" name="email" id="email" autofocus />
                 <label for="password">Password</label>
                 <input type="password" placeholder="Your Password" name="password" id="password" />
                 <br />
@@ -23,7 +23,7 @@
         </div>
         
         <div class="span4">
-            <img src="../img/logo-trans.png" alt="Instapics!" />
+            <img src="../img/logo-trans.png" alt="University of North Alabama" />
         </div>
     </div>
     

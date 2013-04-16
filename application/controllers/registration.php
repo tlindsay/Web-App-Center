@@ -14,10 +14,10 @@ class Registration_Controller extends Base_Controller {
         return View::make('registration.index', array('students' => $students));
     }
 
-    //  public function action_insert()
+    // public function action_insert()
     // {
     //     $input = Input::all();
-        
+    
     //     //implement rules for validation here.......
     //     $rules = array(
     //         'name' => 'required',
@@ -25,9 +25,9 @@ class Registration_Controller extends Base_Controller {
     //         'email' => 'required',
     //         'class' => 'required',            
     //     );
-
+    
     //     $validation = Validator::make($input, $rules);
-
+    
     //     if( $validation->fails() ) {
     //         return Redirect::to('registration')->with_errors($validation);
     //     }else{
@@ -36,9 +36,9 @@ class Registration_Controller extends Base_Controller {
     //                             'lNum' => $input['lnum'],
     //                             'email' => $input['email'],
     //                             'class' => $input['class'],
-                                
+                               
     //                             ));
-
+    
     //     Session::flash('status_success', 'Successfully added new student');
     //     return Redirect::to('registration');
     //     }
