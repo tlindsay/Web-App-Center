@@ -40,7 +40,7 @@
             @forelse ($students as $students)
             <form method="POST" action="registration/delete" enctype="multipart/form-data">
                 <tr>
-                    <td>{{ $students->scheduleId }}</td>
+                    <td>{{ $students->scheduleid }}</td>
                     <td>{{ $students->name }}</td>
                     <td>{{ $students->lnum }}</td>
                     <td>{{ $students->email }}</td>
