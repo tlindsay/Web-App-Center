@@ -35,6 +35,10 @@ class Dashboard_Controller extends Base_Controller {
         if ($validation->fails()) {
             return Redirect::to('dashboard')->with_errors($validation);
         } else {
+            error_log($input['date']." ".$input['time']);
+            $datetime = date("Y-m-d H:i:s", strtotime($input['date']." ".$input['time']));
+            $date = date("Y-m-d", strtotime($input['date']));
+            $time = date("H:i:s", strtotime($input['time']));
             $schedule = Schedule::create(array(
                         'title' => $input['title'],
                         //need to insert the date and time instead of just mm/dd/yyyy but 2012-11-28 15:45:20
@@ -47,7 +51,8 @@ class Dashboard_Controller extends Base_Controller {
                         '" . addslashes($_POST['title']) . "'                               
 */
                         //just combine date + time + AM or PM
-                        'dateTimeSlot' => $input['date'] + $input['time'],
+                        // 'dateTimeSlot' => $input['date'] + $input['time'],
+                        'dateTimeSlot' => $datetime,
                         'numAllowed' => $input['number'],
                         'time' => $input['time']
                     ));
