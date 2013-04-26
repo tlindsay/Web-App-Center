@@ -5,11 +5,9 @@ class Registration_Controller extends Base_Controller {
 
     public function action_index()
     {
-              $students = registration::all();
+        // $students = registration::all();
 
-              foreach($students as $student){
-                
-              }
+        $students = registration::order_by('regtime', 'desc')->get();
 
         return View::make('registration.index', array('students' => $students));
     }
