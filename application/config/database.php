@@ -70,7 +70,7 @@ return array(
 		'mysql' => array(
 			'driver'   => 'mysql',
 			'host'     => 'nabdb.beacontec.com',
-			'database' => 'una_test',
+			'database' => 'webapps',
 			'username' => 'weblion',
 			'password' => 'weblion',
 			'charset'  => 'utf8',

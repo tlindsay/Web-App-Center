@@ -36,11 +36,28 @@
         <div class="alert alert-info">
         <h3 class="alert-heading">Registered Students</h3>
         <table class="table">
-            <tr><th>Session ID</th><th>Name</th><th>L Number</th><th>Email</th><th>Class</th><th>Delete</th></tr>
+            <tr><th>Session Date</th><th>Name</th><th>L Number</th><th>Email</th><th>Class</th><th>Delete</th></tr>
             @forelse ($students as $students)
+            <?php
+                $id = $students->scheduleid;
+                // $sched = Schedule::find($id);
+                // $date = $sched->datetimeslot;
+                // $sched = DB::table('schedules')->where('id', $id)->get();
+                $link = mysqli_connect('nabdb.beacontec.com', 'weblion', 'weblion', 'webapps');
+                $results = mysqli_query($link, 'select * from schedules where id = '.$id);
+                $sched = mysqli_fetch_assoc($results);
+                // $date = $sched['dateTimeSlot'];
+                list($date, $time) = preg_split("/\s/", $sched['dateTimeSlot']);
+                list($year, $month, $day) = preg_split("/-/", $date);
+                list($hour, $minute, $second) = preg_split("/:/", $time);
+                $date = date("m/d/Y g:i A", mktime($hour, $minute, $second, $month, $day, $year));
+
+                // $sched = DB::select('select dateTimeSlot from schedules where id = '.$id, array(1));
+                // echo ("<h1>".$id."</h1>");
+            ?>
             <form method="POST" action="registration/delete" enctype="multipart/form-data">
                 <tr>
-                    <td>{{ $students->scheduleid }}</td>
+                    <td>{{ $date }}</td>
                     <td>{{ $students->name }}</td>
                     <td>{{ $students->lnum }}</td>
                     <td>{{ $students->email }}</td>

@@ -6,12 +6,14 @@ class Admin_Controller extends Base_Controller
 
         $users = user::all();
         $permissions = permission::all();
-        // foreach ($users as $users){
-        //     select 'name' from 'permissions' where 'id' = $users;
-        // }
+
+     //    foreach ($users as $users){
+     //        select 'name' from 'permissions' where 'id' = $users;
+     //    }
 
      // dd($permissions);
-     return View::make('admin.index', array('permissions' => $permissions, 'users' => $users));
+
+        return View::make('admin.index', array('permissions' => $permissions, 'users' => $users));
     
     }
 
@@ -51,7 +53,7 @@ class Admin_Controller extends Base_Controller
             Session::flash('status_success', 'New user has been added');
             return Redirect::to('admin');
 
-        }  catch( Exception $e ) {
+        }catch( Exception $e ) {
             Session::flash('status_error', 'An error occurred while creating a new account - please try again.');
             return Redirect::to('admin');
         }

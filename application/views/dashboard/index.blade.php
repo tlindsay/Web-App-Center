@@ -21,7 +21,10 @@
             <label>Date</label>
             <input type="text" name="date" id="date" class="datepicker"/>
             <label>Time</label>
-            <input type="text" name="time" id="time"/><span class="help-inline">hh:mm format</span>
+            <input type="text" name="time" id="time"/>
+                <span class="help-inline">
+                    hh:mm Format
+                </span>
             <label>Total Registrations Allowed</label>
             <input type="text" name="number" id="number"/><span class="help-inline">Must be greater than 0</span>
             <label>Short Title</label>
@@ -36,11 +39,14 @@
             <tr><th>Title</th><th>Date</th><th>Time</th><th>Number</th><th>Delete</th></tr>
             @forelse ($slots as $slots)
             <form method="POST" action="dashboard/delete" enctype="multipart/form-data">
-                <?php $date = date("Y-m-d", strtotime($slots->datetimeslot)); ?>
+                <?php 
+                    $date = date("n/d/Y", strtotime($slots->datetimeslot));
+                    $time = date("g:i A", strtotime($slots->time));
+                ?>
                 <tr>
                     <td>{{ $slots->title }}</td>
                     <td>{{ $date }}</td>
-                    <td>{{ $slots->time}}</td>
+                    <td>{{ $time}}</td>
                     <td>{{ $slots->numallowed }}</td>
                     <td>
                         <button class="btn btn-danger" type="submit">Delete</button>

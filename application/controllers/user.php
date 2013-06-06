@@ -70,10 +70,29 @@ class User_Controller extends Base_Controller
     //find the destination the user should go to
     public function get_destination($email)
     {
+        // $page = 'admin';
 
-   // $page = User->permission;
-    $page = 'admin';
+        $user = User::where('email', '=', $email)->first();
+
+        // $permission = Permission::find($email);
         
+        $permission = $user->permission_id;
+
+        if($permission == 1)
+        {
+            $page = 'admin';
+        }
+        else if($permission ==2)
+        {
+            $page = 'dashboard';
+        }
+        else if($permission == 3)
+        {
+            $page = 'job_search';
+        } else {
+            $page = 'home';
+        }
+
         return $page;
     }
 
@@ -81,6 +100,6 @@ class User_Controller extends Base_Controller
     public function action_logout()
     {
         Auth::logout();
-        Redirect::to('/');
+        Redirect::to('login');
     }
 }
